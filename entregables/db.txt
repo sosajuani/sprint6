@@ -109,3 +109,9 @@ quantity
 subtotal
 order_id
 products_id
+-------------------------------------------------------------------------------------------------
+Host|           uyu7j8yohcwo35j3.cbetxkdyhwsb.us-east-1.rds.amazonaws.com	
+Username|	cthuijo5c3ogyirj	
+Password|	oboivky2ga1ww9lb	
+Port|	3306	
+Database|	mcktikw1woyfican
