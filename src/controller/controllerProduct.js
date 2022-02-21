@@ -1,19 +1,3 @@
-// const path = require("path")
-// //let db = require("../database/models");
-// //const sequelize = db.sequelize;
-// const {Op} = require("sequelize");
-// const controllerImage = require("./controllerImage") 
-
-//llamamos los modelos
-// const Product = db.Product;
-// const Cat = db.Cat;
-// const Size = db.Size;
-// const Discount = db.Discount;
-
-//eliminar fs,jsonDb y db al finalizar
-//let jsonDb=require('../model/mainJson.js');
-//let db=jsonDb('products');
-
 const fs=require('fs');
 const db = require("../database/models");
 const controllerImage = require("./controllerImage");
