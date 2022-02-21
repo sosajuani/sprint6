@@ -12,15 +12,15 @@ module.exports = (sequelize, DataTypes) => {
     static associate(models) {
       Shipping.belongsTo(models.Order,{
         foreignKey: "order_id",
-        as: "orders"
+        as: "Orders"
       })
       Shipping.belongsTo(models.Payment,{
         foreignKey: "payment_id",
-        as:"payments"
+        as:"Payments"
       })
       Shipping.hasOne(models.OrderDetail,{
         foreignKey: "user_add_id",
-        as: "shippings"
+        as: "Shippings"
       })
     }
   }
