@@ -12,15 +12,15 @@ module.exports = (sequelize, DataTypes) => {
     static associate(models) {
       OrderDetail.belongsTo(models.Order,{
         foreignKey: "order_id",
-        as:"Orders"
+        as:"orders"
       });
       OrderDetail.belongsTo(models.Product,{
         foreignKey: "product_id",
-        as: "Products"
+        as: "products"
       });
       OrderDetail.belongsTo(models.Shipping,{
         foreignKey: "user_add_id",
-        as: "Shippings" 
+        as: "shippings" 
       })
     }
   }

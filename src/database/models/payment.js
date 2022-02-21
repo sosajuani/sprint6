@@ -12,11 +12,11 @@ module.exports = (sequelize, DataTypes) => {
     static associate(models) {
       Payment.hasOne(models.Order,{
         foreignKey: "payments_id",
-        as: "Orders"
+        as: "orders"
       });
       Payment.hasOne(models.Shipping, {
         foreignKey: "payments_id",
-        as: "Shippings"
+        as: "shippings"
       })
 
     }

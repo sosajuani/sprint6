@@ -7,22 +7,22 @@ module.exports = (sequelize, DataTypes) => {
     static associate(models) {
       User.hasOne(models.Address,{
         foreignKey: 'user_id',
-        as: "Addresses"
+        as: "addresses"
       });
       User.hasOne(models.Order,{
         foreignKey:"user_id",
-        as:"Orders"
+        as:"orders"
       })
       User.belongsTo(models.Avatar,{
         foreignKey:"avatar_id",
-        as:"Avatars"
+        as:"avatars"
       })
       User.belongsTo(models.Rol,{
         foreignKey:"rol_id",
-        as:"Rols"
+        as:"rols"
       })
       User.belongsToMany(models.Product,{
-        as: "Products",
+        as: "products",
         through: "visiteds",
         foreignKey: "user_id",
         otherKey: "product_id",

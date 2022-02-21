@@ -11,14 +11,14 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       Visited.belongsToMany(models.Product,{
-        as: 'Products',
+        as: 'products',
         through: "visiteds",
         foreignKey: "user_id",
         otherKey: "product_id",
         timestamps: false
       });
       Visited.belongsToMany(models.User,{
-        as: 'Users',
+        as: 'users',
         through: 'visiteds',
         foreignKey: 'product_id',
         otherKey: 'user_id',

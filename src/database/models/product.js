@@ -8,28 +8,28 @@ module.exports = (sequelize, DataTypes) => {
     static associate(models) {
       Product.belongsTo(models.Cat, {
         foreignKey: 'cat_id',
-        as: "Cats"
+        as: "cats"
       });
       Product.belongsTo(models.Size,{
         foreignKey: 'size_id',
-        as: 'Sizes'
+        as: 'sizes'
       });
       Product.belongsTo(models.Discount,{
         foreignKey: 'discount_id',
-        as: "Discounts"
+        as: "discounts"
       });
       Product.hasMany(models.Image,{
         foreignKey: "id_products",
-        as: "Images"
+        as: "images"
       });
       Product.hasOne(models.OrderDetail, {
         foreignKey: "product_id",
-        as: "OrderDetails"
+        as: "orderDetails"
       });
 
       //BelongsToMany
       Product.belongsToMany(models.User,{
-        as: "Users",
+        as: "users",
         through: "visiteds",
         foreignKey: "product_id",
         otherKey: "user_id",
