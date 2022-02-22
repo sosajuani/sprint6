@@ -64,17 +64,7 @@ const controllerPages = {
                     rol_id: req.body.rol
                 })
                 .then(userCreate =>{
-                    addressCreate = Address.create({
-                        province: "",
-                        city: "",
-                        street:"",
-                        number:"",
-                        cp:"",         
-                        phone:"",
-                        floor:"",
-                        user_id: userCreate.id,
-                    })
-                    .then(result => res.redirect('/'))
+                   res.redirect('/')
                 })
                 .catch(e=> console.log(e))
             }else{
