@@ -12,19 +12,22 @@
                     <input placeholder="Stock minimo" type="number" name="stock_min">
                     <input placeholder="Stock maximo" type="number" name="stock_max">
                     <select name="category" id="">
-                        <option value="1">Cat 1</option>
-                        <option value="2">Cat 2</option>
+                        <option value="">Seleccionar una categoría</option>
+                        <% for( let i = 0; i < category.length; i++ ) { %>
+                            <option value="<%= category[i].id %>"><%= category[i].name %></option>
+                        <% } %>
                     </select>
                     <select name="size" id="">
-                        <option value="1">Pequeño</option>
-                        <option value="2">Mediano</option>
-                        <option value="3">Grande</option>
+                        <option value="">Seleccionar un tamaño</option>
+                        <% for( let i = 0; i < size.length; i++ ) { %>
+                            <option value="<%= size[i].id %>"><%= size[i].size %></option>
+                        <% } %>
                     </select>
                     <select name="discount" id="">
                         <option value="">Seleccione un Descuento</option>
-                        <option value="1">5%</option>
-                        <option value="2">10%</option>
-                        <option value="3">15%</option>
+                        <% for( let i = 0; i < discount.length; i++ ) { %>
+                            <option value="<%= discount[i].id %>"><%= discount[i].discount %>%</option>
+                        <% } %>
                     </select>
                     <select name="visibility" id="">
                         <option value="">Seleccione una opcion</option>

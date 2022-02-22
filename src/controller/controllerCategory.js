@@ -19,7 +19,16 @@ const controllerCategory = {
         },{
             where: {id: req.params.id}
         })
-        .then(result=> res.redirect('/category'))
+        .then(result=> res.redirect('/category'));
+    },
+    add: (req,res)=>{
+        res.render("admin/product/addCategory.ejs")
+    },
+    addProcess:(req,res)=>{
+        Category.create({
+            name: req.body.name
+        })
+        .then(result => res.redirect('/category'))
     }
 }
 

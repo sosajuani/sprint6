@@ -23,14 +23,14 @@ module.exports = {
       avatar_id: {
         type: Sequelize.INTEGER,
         references:{
-          model: "Avatars",
+          model: "avatars",
           key: "id"
         }
       },
       rol_id: {
         type: Sequelize.INTEGER,
         references:{
-          model: "Rols",
+          model: "rols",
           key: "id"
         }
       },

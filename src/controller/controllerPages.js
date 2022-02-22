@@ -57,7 +57,7 @@ const controllerPages = {
          .then(data =>{
             if(data === null){
                 console.log("este email es valido");
-                let userCreate = User.create({
+                User.create({
                     first_name: req.body.first_name,
                     last_name: req.body.last_name,
                     email: req.body.email,
@@ -78,6 +78,7 @@ const controllerPages = {
                     })
                     .then(result => res.redirect('/'))
                 })
+                .catch(e=> console.log(e))
             }else{
                 return res.render('pages/register.ejs',{
                     errors: {

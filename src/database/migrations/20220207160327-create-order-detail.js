@@ -17,14 +17,14 @@ module.exports = {
       order_id: {
         type: Sequelize.INTEGER,
         references:{
-          model: "Orders",
+          model: "orders",
           key: "id"
         }
       },
       product_id: {
         type: Sequelize.INTEGER,
         references: {
-          model: "Products",
+          model: "products",
           key: "id"
         }
 
@@ -32,7 +32,7 @@ module.exports = {
       user_add_id: {
         type: Sequelize.INTEGER,
         references:{
-          model: "Shippings",
+          model: "shippings",
           key: "id"
         }
       },

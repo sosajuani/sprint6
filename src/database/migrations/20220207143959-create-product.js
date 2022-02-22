@@ -29,21 +29,21 @@ module.exports = {
       cat_id: {
         type: Sequelize.INTEGER,
         references: {
-          model: 'Cats',
+          model: 'cats',
           key: 'id'
         }
       },
       size_id: {
         type: Sequelize.INTEGER,
         references: {
-          model:'Sizes',
+          model:'sizes',
           key: 'id'
         }
       },
       discount_id: {
         type: Sequelize.INTEGER,
         references: {
-          model:'Discounts',
+          model:'discounts',
           key: 'id'
         }
       },

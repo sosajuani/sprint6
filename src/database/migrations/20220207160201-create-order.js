@@ -17,21 +17,21 @@ module.exports = {
       payments_id: {
         type: Sequelize.INTEGER,
         references:{
-          model: "Payments",
+          model: "payments",
           key: "id"
         }
       },
       user_id: {
         type: Sequelize.INTEGER,
         references:{
-          model: "Users",
+          model: "users",
           key: "id"
         }
       },
       status_id: {
         type: Sequelize.INTEGER,
         references:{
-          model: "Statuses",
+          model: "statuses",
           key: "id"
         }
       },

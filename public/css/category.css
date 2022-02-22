@@ -15,6 +15,16 @@
     text-shadow: 0 2px 0 #000;
     grid-column: 1/3;
     padding-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.addCategoryButton{
+    background: #FF7878;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 1rem;
 }
 .categoryAction > a > i{
  background: #FF7878;
