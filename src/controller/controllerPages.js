@@ -1,7 +1,7 @@
 const fs=require('fs');
 let db = require("../database/models");
 const { compareSync, hashSync }= require('bcryptjs');
-const {validatioResult, validationResult}=require('express-validator');
+const {validationResult}=require('express-validator');
 
 const User = db.User;
 const Address = db.Address;
