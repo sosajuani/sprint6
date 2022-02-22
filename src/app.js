@@ -47,4 +47,4 @@ app.use('/category',routerCategory)
 
 
 
-app.listen(process.env.PORT || 3000, () => console.log('servidor funcionando'));
+app.listen(process.env.PORT || 3001, () => console.log('servidor funcionando'));
