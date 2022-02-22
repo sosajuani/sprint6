@@ -2,9 +2,9 @@
   "name": "JugueteriaGugu",
   "version": "1.0.0",
   "description": "https://trello.com/b/18JyjpiX/dh-web",
-  "main": "src/app.js",
+  "main": "app.js",
   "scripts": {
-    "start": "node src/app"
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
