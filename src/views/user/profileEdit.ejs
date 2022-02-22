@@ -30,44 +30,6 @@
                 <input type="submit" value="Actualizar información">
             </form>
         </div>
-        <div>
-            <h3>Dirección</h3>
-            <form action="/perfil/<%= user.id %>/edit/address?_method=PUT" method="post" class="formProfileEdit">
-                <label for="province">
-                    Provincia
-                    <select name="province" id="province">
-                        <option value="">buenos aires</option>
-                    </select>
-                </label>
-                <label for="city">
-                    Ciudad
-                    <select name="city" id="city">
-                        <option value="">Caba</option>
-                    </select>
-                </label>
-                <label for="street">
-                    Calle
-                    <input placeholder="Colocar calle" value="<%= address.street %>" type="text" name="street" id="street">
-                </label>
-                <label for="number">
-                    Número
-                    <input placeholder="Colocar numero de calle" value="<%= address.number == 0 ? null : address.number %>" type="text" name="number" id="number">
-                </label>
-                <label for="floor">
-                    Piso
-                    <input placeholder="Colocar piso" value="<%= address.floor %>" type="number" name="floor" id="floor">
-                </label>
-                <label for="cp">
-                    Código postal
-                    <input placeholder="Colocar código postal" value="<% address.cp == 0 ? null : address.cp %>" type="number" name="cp" id="cp">
-                </label>
-                <label for="phone">
-                    Número telefónico 
-                    <input placeholder="Colocar número telefónico" value="<%= address.phone == 0 ? null : address.phone %>" type="number" name="phone" id="phone">
-                </label>
-                <input type="submit" value="Actualizar dirección">
-            </form>
-        </div>
     </div>
 </div>
 <%- include("../partials/footerBase.ejs")  %>
