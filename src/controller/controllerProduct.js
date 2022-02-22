@@ -66,7 +66,9 @@ const controllerProduct={
         .then(producto =>{
             console.log(producto.id);
             controllerImage.file(producto.id,req.file.filename)
-            res.redirect('/products');
+            .then(e=>{
+                res.redirect('/products');
+            })
 
         })
         .catch(e => console.log("el error es: "+ e));
