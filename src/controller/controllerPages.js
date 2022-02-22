@@ -1,4 +1,4 @@
-let db = require("../database/models/index.js");
+let db = require("../database/models");
 const { compareSync, hashSync }= require('bcryptjs');
 const {validationResult}=require('express-validator');
 
